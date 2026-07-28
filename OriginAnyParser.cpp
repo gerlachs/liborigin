@@ -2279,7 +2279,12 @@ void OriginAnyParser::getCurveProperties(const string &cvehd, unsigned int cvehd
             stmp.str(cvehd.substr(0x4A));
             GET_SHORT(stmp, width)
         }
-        int col_index = findColumnByName((int)ispread, name);
+        unsigned short dataID = 0;
+        stmp.str(cvehd.substr(0x04));
+        GET_SHORT(stmp, dataID)
+        int col_index = dataID > 0 ? findColumnByDatasetIndex((int)ispread, dataID - 1) : -1;
+        if (col_index == -1)
+            col_index = findColumnByName((int)ispread, name);
         if (col_index != -1) {
             spreadSheets[ispread].columns[col_index].name = name;
 
