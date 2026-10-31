@@ -53,6 +53,7 @@ protected:
     void convertSpreadToExcel(std::vector<Origin::SpreadSheet>::size_type spread);
 
     int findColumnByName(int spread, const std::string &name);
+    int findColumnByDatasetIndex(int spread, unsigned int datasetIndex) const;
 
 private:
     bool iequals(const std::string &, const std::string &,

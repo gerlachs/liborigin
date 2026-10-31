@@ -1,0 +1,22 @@
+opj2dat 3.0.4, Copyright (C) 2008-2024 Stefan Gerlach, 2017 Miquel Garriga
+Project has 1 windows.
+Origin project Tree
+column-dataid-collision	2006-04-29 17:26:12
+Parsing status = 1
+OPJ PROJECT "examples/column-dataid-collision.opj" VERSION = 9.75
+number of datasets     = 2
+number of spreadsheets = 1
+number of matrices     = 0
+number of excels       = 0
+number of functions    = 0
+number of graphs       = 0
+number of notes        = 0
+Spreadsheet 1
+ Name: Data1
+ Label: 
+	Columns: 2
+	Column 1 : ABCDEFGHIJK / type : 0, rows : 3
+	Column 2 : ABCDEFGHIJK / type : 1, rows : 3
+saved to examples/column-dataid-collision.opj.1.dat
+ABCDEFGHIJKABCDEFGHIJK
+ Data: 

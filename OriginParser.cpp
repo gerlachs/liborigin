@@ -230,3 +230,13 @@ int OriginParser::findColumnByName(int spread, const string &name)
     }
     return -1;
 }
+
+int OriginParser::findColumnByDatasetIndex(int spread, unsigned int datasetIndex) const
+{
+    const size_t columnsCount = spreadSheets[spread].columns.size();
+    for (unsigned int i = 0; i < columnsCount; i++) {
+        if (spreadSheets[spread].columns[i].index == datasetIndex)
+            return i;
+    }
+    return -1;
+}
